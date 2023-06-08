@@ -10,7 +10,7 @@ First, cd to a directory that will contain other folders we can loop through tha
 
 Then apply the warp. Edit the code below so you are pulling the correct paths (i.e., the LINDAWarper repository directory and the name of the file you want to warp)
 
-	> for subs in *; do echo ${subs}; applywarp --ref=${FSLDIR}/data/standard/MNI152_T1_2mm --in=$bd/${subs}/linda/Prediction3_template.nii --warp=./LINDAWarper/nonlinear_tsf --out=$bd/${subs}/linda/Prediction3_template_MNI_152_2mm.nii --premat=./LINDAWarp/affine.mat; done
+	> for subs in *; do echo ${subs}; applywarp --ref=${FSLDIR}/data/standard/MNI152_T1_2mm --in=$bd/${subs}/linda/Prediction3_template.nii --warp=./LINDAWarper/nonlinear_tsf --out=$bd/${subs}/linda/Prediction3_template_MNI_152_2mm.nii; done
 
 For your reference, here is how the transform was generated
 
